@@ -3,7 +3,7 @@ from django import forms
 from django.forms.util import ValidationError
 from django.utils.translation import ugettext as _
 
-from ajax_filtered_fields.forms import FilteredSelectMultiple, FilteredSelect
+from ajax_filtered_fields.forms.widgets import FilteredSelectMultiple, FilteredSelect
 from ajax_filtered_fields import utils
 
 class AjaxManyToManyField(forms.ModelMultipleChoiceField):

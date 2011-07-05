@@ -131,20 +131,21 @@ class FilteredSelect(forms.Select):
                             
         output = u"""
             <div class="selector">
-                %(lookups_output)s
-            </div>
-            
-            <div class="selector">
-                <div class="selector-available">
-                    <h2>%(selection)s</h2>
-                    <p class="selector-filter">
-                        <img src="%(admin_media_prefix)simg/admin/selector-search.gif"> 
-                        <input id="%(filter_id)s" type="text">
-                    </p>
-                    %(parent_output)s
+                <div class="selector">
+                    %(lookups_output)s
+                </div>
+                
+                <div class="selector">
+                    <div class="selector-available">
+                        <h2>%(selection)s</h2>
+                        <p class="selector-filter">
+                            <img src="%(admin_media_prefix)simg/admin/selector-search.gif"> 
+                            <input id="%(filter_id)s" type="text">
+                        </p>
+                        %(parent_output)s
+                    </div>
                 </div>
             </div>
-            
             <input type="hidden" name="%(name)s" id="hidden-%(element_id)s" value="%(value)s" />
             
             <script type="text/javascript" charset="utf-8">
